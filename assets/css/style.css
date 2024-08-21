@@ -108,6 +108,7 @@ body {
 }
 
 .scissors-photo{
+    margin-top:12px;
     margin-left:40px;
     transform: rotate( 197deg );
 }
@@ -269,6 +270,8 @@ element.style {
     border-bottom: 1px solid #000;
     width:300px;
     text-align:right;
+    display:flex;
+    flex-direction:right;
 }
 
 .section2-photo{
@@ -282,20 +285,30 @@ element.style {
 
 .title-cut{
     font-size:30px;
+    display:flex;
+    text-align:auto;
 }
 
 .title-other{
     font-size:30px;
+    display:flex;
+    text-align:auto;
 }
 
 .cut-menu{
     padding-left:100px;
     padding-top:50px;
+    display:flex;
+    flex-direction:column;
+    text-align:right;
 }
 
 .other-menu{
     padding-left: 100px;
     padding-top:50px;
+    display:flex;
+    flex-direction:column;
+    text-align:right;
 }
 
 .menu-name{
