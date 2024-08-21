@@ -11,6 +11,7 @@ body {
     align-items: center;
     width:max;
     height:80px;
+    padding-bottom:10px;
 }
 
 .left-info{
@@ -30,13 +31,14 @@ body {
 
 .title{
     font-size:30px;
+    padding-top:15px;
 }
 
 
 .barber-pole {
     width: 60px;
     height: auto;
-    padding:20px;
+    padding-top:15px;
 }
 
 .title {
@@ -78,19 +80,38 @@ body {
 
 .header-fix {
     background-color: #f8f8f8;
-    padding: 10px 20px;
-    height:100px
-
+    height: 70px; /* ヘッダーの高さを調整 */
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    justify-content: space-between; /* 水平方向のスペース調整 */
+    padding: 0 20px; /* 内側の余白調整 */
+    top: 0;
+    z-index: 1000; /* 他の要素の上に表示 */
+    transition: top 0.3s ease-in-out; /* スクロール時の動きをスムーズに */
 }
 
-.navbar-list {
+.header-fix.fixed {
+    position: fixed; /* 固定表示 */
+    top: 0;
+    left: 0;
+}
+
+.naver-list{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    height:100vh;
+    width:100%;
+    text-align: center;
+    list-style: none; /* リストのデフォルトの箇条書きスタイルを削除 */
 }
+
+.scissors-photo{
+    margin-left:20px;
+}
+
+
 
 .navbar-link {
     color: #000;
@@ -114,6 +135,7 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
     width:150px;
+    margin-right:20px;
 }
 
 .contact-text {
@@ -126,3 +148,100 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+
+/*-----------------------section1---text-section--------------------------*/
+.text-section{
+    font-size:20px;
+}
+
+.store-info{
+    font-size:40px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    width:700px;
+
+}
+
+/*-----------------------section1---photo-section--------------------------*/
+.photo-section{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding-right:100px;
+}
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:40%;
+    margin:0 auto;
+}
+
+.slider img {
+    width:26vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+    height:auto;
+}
+
+.slider .slick-slide {
+	transform: scale(0.8);/*左右の画像のサイズを80%に*/
+	transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+	opacity: 0.5;/*透過50%*/
+}
+
+.slider .slick-slide.slick-center{
+	transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+	opacity: 1;/*透過なし*/
+}
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 22%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+	margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+
