@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="header-top">
+        <!-- <div class="header-top">
             <div class="left-info">
                 <p>営業時間</p>
                 <p class="hours">9:00〜19:00</p>
@@ -26,23 +26,21 @@
                 <p>ご予約・お問合せ</p>
                 <p class="phone-number">058-263-9481</p>
             </div>
-        </div>
-        <div class ="header-logo">
-            <img src="./assets/img/header-logo1.jpg" alt="背景">
-        </div>
+        </div> -->
         <div class ="header-fix">
             <ul class="naver-list">
                 <li class="scissors-photo">
                     <img src="./assets/img/scissors.webp" alt="Scissors" class="navbar-icon">
                 </li>
+                <h1 class="title-kato">加藤理容室</h1>
                 <li class="top-btn naver">
                     <a href="#" class="navbar-link naver">トップ<br><span>TOP</span></a>
                 </li>
                 <li class="info-btn">
-                    <a href="#" class="navbar-link naver">店舗情報<br><span>INFO</span></a>
+                    <a href="#session1" class="navbar-link naver">店舗情報<br><span>INFO</span></a>
                 </li>
                 <li class="menu-btn">
-                    <a href="#" class="navbar-link naver">メニュー<br><span>MENU</span></a>
+                    <a href="#session2" class="navbar-link naver">メニュー<br><span>MENU</span></a>
                 </li>
                 <li class="map-btn">
                     <a href="#" class="navbar-link naver">マップ<br><span>MAP</span></a>
@@ -53,9 +51,13 @@
                 </li>
             </ul>
         </div>
+        <div class ="header-logo">
+            <img src="./assets/img/header-logo1.jpg" alt="背景">
+        </div>
+
     </header>
     <main>
-        <session1 class="session1">
+        <session1 id="session1" class="session1">
             <h1 class="store-info">店舗情報</h1>
             <div class="session1-all">
                 <div class="text-section">
@@ -78,10 +80,9 @@
                 </div>
             </div>
         </session1>
-        <session2>
+        <session2 id ="session2">
             <div class="section2-set">
              <img class="section2-photo" src="./assets/img/section2.JPEG" alt="pole">
-               
                 <div class="section-inmenu">
                     <div class="parent-title">
                         <h1 class="section-title">メニュー</h1>
@@ -114,9 +115,29 @@
             </div>
         </session2>
         <session3>
-
+            <div class="address">
+                <div class="adress-char">
+                    <div class="parent-place">
+                        <h1 class="place-info">住所</h1>
+                    </div>
+                    <div class="all-menu">
+                        <ul class="all-info">
+                            <li class="address-info">住所　〒500-8816<br> 岐阜市 菅原町 2丁目 14番地</li>
+                            <li class="address-info">アクセス 岐阜駅から徒歩10分、バス停「菅原町」から徒歩2分</li>
+                            <li class="address-info">営業時間 9時〜19時</li>
+                            <li class="address-info">駐車場 有り</li>
+                        </ul>
+                    </div>
+                </div>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52021.0050038964!2d136.70268251712324!3d35.42228030000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003a95052f96acd%3A0x3d3b253b153ad1af!2z5Yqg6Jek55CG5a656Zmi!5e0!3m2!1sja!2sph!4v1724317454111!5m2!1sja!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </session3>
-        <session4></session4>
+
+        <session4>
+            <div class="business-days">
+
+            </div>
+        </session4>
     </main>
     <footer>
 
@@ -125,6 +146,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="calendar.js"></script>
 </body>
 </html>
 

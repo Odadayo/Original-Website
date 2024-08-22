@@ -14,6 +14,10 @@ body {
     padding-bottom:10px;
 }
 
+.title-kato{
+    font-size:45px;
+}
+
 .left-info{
     margin:0 100px;
 }
@@ -138,6 +142,7 @@ body {
     padding: 10px 80px 10px 0px;
     border-radius: 10px;
     width:140px;
+    padding-left: 30px;
 }
 
 .contact-text {
@@ -270,7 +275,6 @@ body {
     display:flex;
 }
 .section-inmenu{
-    border-bottom: 1px solid #000;
     text-align:right;
     display:flex;
     flex-direction:column;
@@ -359,3 +363,38 @@ body {
     padding:20px;
     transform: rotate( -30deg );
 }
+
+/*---------------------session3-----------------------*/
+.address{
+    display:flex;
+}
+
+.adress-char{
+    display:flex;
+    flex-direction: column;
+}
+
+.place-info{
+    font-size:40px;
+    padding:20px 0px 20px 150px;
+    border-bottom: 1px solid #000;
+}
+
+.all-info{
+    font-size:20px;
+    padding:50px 60px;
+    text-align:left;
+    padding-right: 100px;
+}
+
+.address-info{
+    padding:20px 0;
+}
+
+.map{
+    padding-top: 60px;
+    padding-left:70px;
+}
+
+/*--------------------------session4------------------------*/
+
