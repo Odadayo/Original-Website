@@ -158,9 +158,6 @@ body {
 
 /*-----------------------section1---text-section--------------------------*/
 .session1{
-    *{
-        outline: 2px red solid;
-    }
 }
 .session1-all{
     display:flex;
@@ -191,27 +188,25 @@ body {
 }
 
 /*-----------------------section1---photo-section--------------------------*/
-/* .photo-section{
+.photo-section{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    align-content: flex-end;
-} */
+    align-items: right;
+    flex-direction: column;
+}
 .slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    width:50%;
+    width:500px;
 }
 
 .slider img {
-    width:26vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+    width:34vw;/*スライダー内の画像を26vwにしてレスポンシブ化*/
     height:auto;
 }
 
 .slider .slick-slide {
 	transform: scale(0.8);/*左右の画像のサイズを80%に*/
 	transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
-	opacity: 0.5;/*透過50%*/
+	opacity: 0.6;/*透過50%*/
 }
 
 .slider .slick-slide.slick-center{
@@ -297,7 +292,7 @@ body {
 }
 
 .section2-photo {
-    width: auto; /* 固定の幅を設定しない */
+    width: 700px; /* 固定の幅を設定しない */
     max-width: 45%; /* 最大幅を設定 */
     height: auto; /* アスペクト比を保つ */
     object-fit: contain; /* 画像が要素内に収まるように調整 */
