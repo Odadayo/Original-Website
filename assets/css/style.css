@@ -66,7 +66,7 @@ body {
     font-size: 16px;
 }
 
-.header-logo{
+.header-logo1{
     width:100vw;
     height:100vh;
 }
@@ -88,6 +88,7 @@ body {
     top: 0;
     z-index: 1000; /* 他の要素の上に表示 */
     transition: top 0.3s ease-in-out; /* スクロール時の動きをスムーズに */
+    width:100%;
 }
 
 .header-fix.fixed {
@@ -134,10 +135,9 @@ body {
     text-align: center;
     color: #fff;
     background-color: #444;
-    padding: 10px 20px;
+    padding: 10px 80px 10px 0px;
     border-radius: 10px;
-    width:150px;
-    margin-right:20px;
+    width:140px;
 }
 
 .contact-text {
@@ -152,8 +152,19 @@ body {
 }
 
 /*-----------------------section1---text-section--------------------------*/
+.session1{
+    *{
+        outline: 2px red solid;
+    }
+}
+.session1-all{
+    display:flex;
+}
+
+
 .text-section{
     font-size:22px;
+    width:300px;
 }
 
 .store-info{
@@ -170,19 +181,21 @@ body {
     padding-left:100px;
 }
 
+.detail-info{
+    padding:20px;
+}
+
 /*-----------------------section1---photo-section--------------------------*/
-.photo-section{
+/* .photo-section{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-content: flex-end;
-    padding-right:100px;
-}
+} */
 .slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    width:40%;
-    margin:0 auto;
+    width:50%;
 }
 
 .slider img {
@@ -243,7 +256,7 @@ body {
     color: transparent;
     outline: none;
     width:8px;/*ドットボタンのサイズ*/
-    height:8px;/*ドットボタンのサイズ*/
+    height:16px;/*ドットボタンのサイズ*/
     display:block;
     border-radius:50%;
     background:#ccc;/*ドットボタンの色*/
@@ -258,53 +271,67 @@ body {
 }
 .section-inmenu{
     border-bottom: 1px solid #000;
-    text-align:right；
+    text-align:right;
+    display:flex;
+    flex-direction:column;
 }
 
-element.style {
+.parent-title{
     display: flex;
+    justify-content: flex-end;
+    
 }
 
 .section-title{
     font-size:40px;
     border-bottom: 1px solid #000;
-    width:300px;
-    text-align:right;
-    display:flex;
-    flex-direction:right;
+    width:600px;
+    padding-left:100px;
+    text-align: right;
+    padding-right: 100px;
+    padding-bottom: 20px;
 }
 
-.section2-photo{
-    width:600px;
+.section2-photo {
+    width: auto; /* 固定の幅を設定しない */
+    max-width: 45%; /* 最大幅を設定 */
+    height: auto; /* アスペクト比を保つ */
+    object-fit: contain; /* 画像が要素内に収まるように調整 */
 }
+
 
 .all-menu{
     display:flex;
     font-size:20px;
+    text-align:center;
+    justify-content: center;
 }
 
 .title-cut{
     font-size:30px;
     display:flex;
-    text-align:auto;
+    justify-content: center;
+    padding:10px;
+    padding-bottom:50px;
 }
 
 .title-other{
     font-size:30px;
     display:flex;
-    text-align:auto;
+    justify-content: center;
+    padding-bottom:50px;
 }
 
 .cut-menu{
-    padding-left:100px;
     padding-top:50px;
+    padding-left:100px;
     display:flex;
     flex-direction:column;
     text-align:right;
 }
 
 .other-menu{
-    padding-left: 100px;
+    padding-left: 50px;
     padding-top:50px;
     display:flex;
     flex-direction:column;
@@ -317,7 +344,8 @@ element.style {
 
 .s2-subphoto{
     display:flex;
-    padding-left:300px;
+    padding-top:60px;
+    padding-left:200px;
 }
 
 .s2-comb{

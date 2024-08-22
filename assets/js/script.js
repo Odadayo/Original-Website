@@ -1,14 +1,25 @@
 window.addEventListener('scroll', function() {
-    const header = document.querySelector('.header-fix');
+    const header = document.querySelector('.header-fix');//固定したい要素を決める
     const topPosition = header.offsetTop;
 
     if (window.pageYOffset > topPosition) {
-        header.classList.add('fixed');
+        header.classList.add('fixed');//固定する処理
     } else {
-        header.classList.remove('fixed');
+        header.classList.remove('fixed');//戻る時の処理ここを変更すれば良い
     }
 });
 
+// window.addEventListener('scroll', function() {
+//     const header = document.querySelector('.header-fix');
+//     const topPosition = header.offsetTop;
+//     const returnPosition = header.offsetTop;
+
+//     if (window.pageYOffset > topPosition) {
+//         header.classList.add('fixed');
+//     } else {
+//         header.classList.remove('fixed');
+//     }
+// });
 
 $('.slider').slick({
     autoplay: true,//自動的に動き出すか。初期値はfalse。
