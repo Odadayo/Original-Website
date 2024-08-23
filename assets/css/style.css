@@ -166,7 +166,7 @@ body {
 
 .text-section{
     font-size:22px;
-    width:300px;
+    width:600px;
 }
 
 .store-info{
@@ -187,7 +187,6 @@ body {
     padding:20px;
 }
 
-/*-----------------------section1---photo-section--------------------------*/
 .photo-section{
     display: flex;
     justify-content: flex-end;
@@ -195,11 +194,11 @@ body {
     flex-direction: column;
 }
 .slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    width:500px;
+    width:700px;
 }
 
 .slider img {
-    width:34vw;/*スライダー内の画像を26vwにしてレスポンシブ化*/
+    width:30vw;/*スライダー内の画像を26vwにしてレスポンシブ化*/
     height:auto;
 }
 
@@ -284,15 +283,14 @@ body {
 .section-title{
     font-size:40px;
     border-bottom: 1px solid #000;
-    width:600px;
-    padding-left:100px;
+    width:550px;
     text-align: right;
-    padding-right: 100px;
+    padding-right: 200px;
     padding-bottom: 20px;
 }
 
 .section2-photo {
-    width: 700px; /* 固定の幅を設定しない */
+    width: 600px; /* 固定の幅を設定しない */
     max-width: 45%; /* 最大幅を設定 */
     height: auto; /* アスペクト比を保つ */
     object-fit: contain; /* 画像が要素内に収まるように調整 */
@@ -373,13 +371,14 @@ body {
     font-size:40px;
     padding:20px 0px 20px 150px;
     border-bottom: 1px solid #000;
+    width:600px;
 }
 
 .all-info{
     font-size:20px;
     padding:50px 60px;
     text-align:left;
-    padding-right: 100px;
+    width:650px;
 }
 
 .address-info{
@@ -387,9 +386,196 @@ body {
 }
 
 .map{
-    padding-top: 60px;
-    padding-left:70px;
+    padding-top: 120px;
+}
+
+.address-detail{
+    display:flex;
+    text-align: right;
+    justify-content: flex-end;
+    display:block;
 }
 
 /*--------------------------session4------------------------*/
+div.cal_wrapper {
+    padding-top: 30px;
+    padding-left:80px;
+}
+div.schedule_wrapper {
+    padding: 10px 0px;
+    width: 600px;
+    border: solid 1px #CCC;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #666;
+}
+div.schedule_wrapper h3 {
+    padding: 0px 10px;
+    font-weight: normal;
+    margin: 0px;
+    font-size: 12px;
+    color: #666;
+}
+div.schedule_wrapper div.schedule_list {
+    padding: 0px 10px;
+    margin: 0px;
+}
+ 
+div.cal_wrapper table.cal tr th p {
+    float: left;
+    padding: 5px;
+    margin: 0px;
+    color: #666;
+    font-size: 12px;
+}
+div.cal_wrapper table.cal tr th div.cal_ui {
+    float: right;
+}
+ 
+div.cal_wrapper table.cal tr th div.cal_ui input {
+    border: solid 1px #CCC;
+    background-color: #FFF;
+    font-size: 12px;
+    margin: 0px 1px;
+    padding: 1px 3px;
+    border-radius: 2px;
+}
+div.cal_wrapper table.cal td {
+    border: solid 1px #000;
+}
+table{
+  border-collapse: collapse;
+}
+
+div.cal_wrapper table.cal tr td {/*数字が入ってるやつの一つ一つのサイズ感を変更する*/
+    font-size: 15px;
+    text-align: center;
+    padding: 2px;
+    width:50px;
+    height:50px;
+
+}
+div.cal_wrapper table.cal tr.headline td {
+    padding: 5px 0px;
+}
+div.cal_wrapper table.cal tr.headline {
+    background-color: #EEE;
+}
+/*カレンダー表組の装飾*/
+div.cal_wrapper table.cal tr td div {
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+    align-items:center;
+    background-color: #FFF;
+    border-radius: 3px;
+}
+div.cal_wrapper table.cal tr td div span {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 180px;
+    border: solid 1px #EEE;
+    background-color: #FFF;
+    text-align: left;
+    padding: 5px;
+    z-index: 10;
+    color: #000;
+    font-weight: normal;
+    line-height: 1.5em;
+    box-shadow: 1px 1px 3px #666;
+}
+ 
+/* Holydayの装飾 */
+div.cal_wrapper table.cal tr td div.Holyday {
+    font-weight: bolder;
+    color: red;/*祝日の文字色。赤色にしてます。*/
+}
+ 
+ 
+div.cal_wrapper table.cal tr td div.Today {
+  color: #66ccff;/*当日の文字色。見本では水色にしてます。*/
+    font-weight: bolder;
+}
+ 
+
+ 
+.sat {
+  color:black;
+  background: #D0E8FF;/*「土曜日」見出し部分の背景色。水色にしてます。*/
+  font-weight: bold;
+}
+ 
+.sun {
+  color:black;
+  background-color: #FDDFFC;/*「日曜日」見出し部分の背景色。ピンク色にしてます。*/
+  font-weight: bold;
+}
+
+/*------------sesison4文字のところ----------*/
+
+.session4-set{
+    display:flex;
+}
+
+.session4-detail{
+    text-align:right;
+    display:flex;
+    flex-direction:column;
+    padding-left:120px;
+}
+
+.parent-session4{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.session4-title{
+    font-size:40px;
+    border-bottom: 1px solid black;
+    width:600px;
+    text-align:rightr;
+    padding-bottom:20px;
+    padding-top:30px;
+    padding-right:140px;
+}
+
+.all-detail{
+    display:flex;
+    flex-direction:column;
+    font-size:20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.all-list{
+    display: flex;
+    text-align: right;
+    justify-content: space-around;
+    padding-top:50px;
+}
+
+.title-holiday{
+    font-size:26px;
+    padding:30px;
+    text-align:left;
+}
+
+.detail-holiday{
+    padding:20px;
+}
+
+.attention{
+    padding-top:50px;
+    padding-bottom:200px;
+}
+
+.holiday-content{
+    display: flex;
+    flex-direction: column;
+    text-align:right;
+}
+ 
+
 
