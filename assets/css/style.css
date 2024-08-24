@@ -172,19 +172,28 @@ body {
     font-size:40px;
     border-bottom: 1px solid #000;
     display: inline-block;
-    width:700px;
+    width:600px;
     padding-left:200px;
     padding-top:40px;
+    margin-bottom:50px;
+    padding-bottom:20px;
+    align-items:center;
 }
 
 .detail-info{
-    padding-top:100px;
-    padding-left:100px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align:right;
+    padding-right:100px;
+    padding-left:50px;
+    font-size:22px;
 }
 
-.detail-info{
-    padding:20px;
+.store-detail{
+    padding-top:50px;
 }
+
 
 .photo-section{
     display: flex;
@@ -248,6 +257,7 @@ body {
 .slick-dots li {
     display:inline-block;
 	margin:0 5px;
+    padding-bottom:50px;
 }
 
 .slick-dots button {
@@ -282,7 +292,7 @@ body {
 .section-title{
     font-size:40px;
     border-bottom: 1px solid #000;
-    width:550px;
+    width:600px;
     text-align: right;
     padding-right: 200px;
     padding-bottom: 20px;
@@ -552,7 +562,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
 }
 
 .title-holiday{
-    font-size:26px;
+    font-size:22px;
     padding:30px;
     text-align:left;
 }
@@ -574,7 +584,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
  
 /*--------------------------footer------------------------------*/
 .footer{
-    height:100px;
+    height:110px;
     background-color: #f5f5f5;
     text-align:center;
 }
@@ -588,8 +598,8 @@ div.cal_wrapper table.cal tr td div.Holyday {
 
 .footer-title{
     font-weight: bold;
-    font-size:20px;
-    padding-top:10px;
+    font-size:22px;
+    padding-top:12px;
     padding-bottom:5px;
 }
 
@@ -603,6 +613,10 @@ div.cal_wrapper table.cal tr td div.Holyday {
 
 .phone{
     height:20px;
+}
+
+.footer-last{
+    padding-bottom: 14px;
 }
 
 
