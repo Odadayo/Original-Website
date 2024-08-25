@@ -619,4 +619,55 @@ div.cal_wrapper table.cal tr td div.Holyday {
     padding-bottom: 14px;
 }
 
+/*--------------------レスポンシブ対応--------------------*/
+@media screen and (max-width: 780px) {
+    /*-------------header-------------------*/
+    .header-fix {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .top-btn, .info-btn, .menu-btn, .map-btn, .bd-btn, .contact-btn {
+        display: none;
+    }
+    .title-kato {
+        font-size: 20px;
+    }
+    .naver-list {
+        text-align: center;
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
 
+    /*-------------session1-------------------*/
+    .session1-all {
+        flex-direction: column;
+    }
+    .slider img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*-------------section2-------------------*/
+    .section2-set {
+        flex-direction: column;
+    }
+    .section2-photo, .section-inmenu {
+        width: 100%;
+    }
+
+    /*-------------address-------------------*/
+    .address {
+        flex-direction: column;
+    }
+    .map {
+        width: 100%;
+    }
+
+    /*-------------session4-------------------*/
+    .session4-set {
+        flex-direction: column;
+    }
+}

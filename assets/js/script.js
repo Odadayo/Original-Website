@@ -37,6 +37,18 @@ $('.slider').slick({
 
 /*ヘッダーの中の文字をホバーした時に色が変わる仕組み*/
 
+document.querySelectorAll('.naver').forEach(function(link) {
+    link.addEventListener('mouseover', function() {
+        this.style.color = '#919191';  // マウスオーバー時の色を指定
+    });
+
+    link.addEventListener('mouseout', function() {
+        this.style.color = '';  // マウスアウト時に元の色に戻す
+    });
+});
+
+
+
 //---------------------------session4--------------------------------//
 
 // Cal3.4.5 / 2014-08-05
