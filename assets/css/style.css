@@ -623,11 +623,13 @@ div.cal_wrapper table.cal tr td div.Holyday {
 @media screen and (max-width: 780px) {
     /*-------------header-------------------*/
     .header-fix {
-        flex-direction: column;
-        width: 100%;
+        width: 100vw;
         height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding:0px;
     }
-    .top-btn, .info-btn, .menu-btn, .map-btn, .bd-btn, .contact-btn {
+    .top-btn, .info-btn, .menu-btn, .map-btn, .bd-btn, .contact-btn{
         display: none;
     }
     .title-kato {
@@ -636,38 +638,88 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .naver-list {
         text-align: center;
         width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
-    body {
-        width: 100%;
+    .header-logo{
+        width:100%;
     }
-
-    /*-------------session1-------------------*/
-    .session1-all {
-        flex-direction: column;
-    }
-    .slider img {
-        width: 80%;
-        margin: 0 auto;
+    .title-kato {
+        font-size: 24px;
     }
 
-    /*-------------section2-------------------*/
-    .section2-set {
-        flex-direction: column;
-    }
-    .section2-photo, .section-inmenu {
-        width: 100%;
+    .scissors-photo {
+        margin: 10px;
     }
 
-    /*-------------address-------------------*/
-    .address {
-        flex-direction: column;
-    }
-    .map {
-        width: 100%;
+    .navbar-icon {
+        height: 35px;
     }
 
-    /*-------------session4-------------------*/
-    .session4-set {
+    /*-----------------session1--------------*/
+    .session1-all{
+        display:flex;
         flex-direction: column;
+    }
+    .store-info{
+        font-size:30px;
+        padding:10px 10px;
+        width:80%;/*--------------------------------後で変更する*/
+        text-align:right;
+    }
+    .text-section{
+        width:100%;
+    }
+    .detail-info{
+        font-size:18px;
+        padding:0px;
+    }
+    .slider{
+        width:100%;
+    }
+    /*-----------------session2--------------*/
+    .section2-photo{
+        display:none;
+    }
+    .section-title{
+        width:100%;
+        padding:0px;
+        text-align:left;
+    }
+    .all-menu{
+        width:100%;
+    }
+    .cut-menu{
+        padding:0px;
+    }
+    .other-menu{
+        padding:0px;
+    }
+    .title-other{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+    .s2-subphoto{
+        padding:0px;
+        flex-direction: column;
+    }
+    /*------------------session3-----------------*/
+    .place-info{
+        padding:0px;
+        width:100%;/*-------------後で変更する-----------*/
+    }
+    .address{
+        display:flex;
+        flex-direction: column;
+    }
+    .map{
+        width:80%;
+    }
+    /*-------------------session4-----------------*/
+    .session4-set{
+        flex-direction:column-reverse;
     }
 }
