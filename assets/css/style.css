@@ -633,7 +633,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
         display: none;
     }
     .title-kato {
-        font-size: 20px;
+        font-size: 30px;
     }
     .naver-list {
         text-align: center;
@@ -666,8 +666,9 @@ div.cal_wrapper table.cal tr td div.Holyday {
         width:80%;
         text-align:right;
         text-align: left;
-        padding:20px 10px 20px 10px;
+        padding:20px 10px;
         margin-bottom:20px;
+        padding-left:35px;
     }
     .text-section{
         width:100%;
@@ -709,6 +710,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
         text-align:right;
         font-size:30px;
         margin-bottom: 20px;
+        padding-right:35px;
     }
     .all-menu{
         width:100%;
@@ -750,6 +752,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
         padding:20px 10px;
         width:80%;
         font-size:30px;
+        padding-left:35px;
     }
     .address{
         display:flex;
@@ -758,11 +761,42 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .address-info{
         padding-bottom: 20px;
     }
+    .all-info{
+        padding:0px 15px;
+    }
     .map{
         width:80%;
+        height:250px;
+        text-align:center;
+        margin:0 auto;
     }
+
     /*-------------------session4-----------------*/
     .session4-set{
         flex-direction:column-reverse;
+    }
+    .session4-title{
+        font-size:30px;
+        padding:20px 10px;
+        width:80%;
+        padding-right:35px;
+    }
+    .session4-detail{
+        padding:0px;
+    }
+    .attention{
+        padding:50px 15px;
+    }
+    div.cal_wrapper {
+        padding-top: 30px;
+        padding-left:0px;
+        width:80%;
+        text-align:center;
+        margin:0 auto;
+        padding-bottom:25px;
+    }
+    /*--------footer----------*/
+    .footer-title{
+        font-size:20px;
     }
 }
