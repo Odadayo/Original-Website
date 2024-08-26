@@ -286,7 +286,6 @@ body {
 .parent-title{
     display: flex;
     justify-content: flex-end;
-    
 }
 
 .section-title{
@@ -499,7 +498,8 @@ div.cal_wrapper table.cal tr td div span {
 /* Holydayの装飾 */
 div.cal_wrapper table.cal tr td div.Holyday {
     font-weight: bolder;
-    color: red;/*祝日の文字色。赤色にしてます。*/
+    color: whitesmoke;/*祝日の文字色。赤色にしてます。*/
+    background-color: #ff0033;
 }
  
  
@@ -634,18 +634,20 @@ div.cal_wrapper table.cal tr td div.Holyday {
     }
     .title-kato {
         font-size: 30px;
+        margin-right:10vw;
     }
     .naver-list {
         text-align: center;
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .header-logo{
         width:100%;
+        height:auto;
     }
     .title-kato {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .scissors-photo {
@@ -704,16 +706,37 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .section2-photo{
         display:none;
     }
+    .section2-set{
+        display:flex;
+        padding:0px;
+        margin:0px;
+        justify-content: right;
+        width:100%;
+        align-items:right;
+    }
+    .section-inmenu{
+        display:flex;
+        text-align: right;
+        width:100%;
+        justify-content: right;
+        padding:0px;
+        margin:0px;
+    }
     .section-title{
         width:80%;
         padding:20px 10px;
         text-align:right;
+        justify-content: right;
         font-size:30px;
         margin-bottom: 20px;
         padding-right:35px;
     }
     .all-menu{
         width:100%;
+        flex-direction: column;
+        text-align:right;
+        justify-content: right;
+
     }
     .cut-menu{
         padding:0px;
@@ -737,6 +760,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .s2-subphoto{
         padding:0px;
         flex-direction: column;
+        display:none;
     }
     .s2-scissors{
         width:100px;
@@ -763,11 +787,13 @@ div.cal_wrapper table.cal tr td div.Holyday {
     }
     .all-info{
         padding:0px 15px;
+        width:90%;
     }
     .map{
         width:80%;
-        height:250px;
+        height:30vh;
         text-align:center;
+        align-items:center;
         margin:0 auto;
     }
 
@@ -780,6 +806,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
         padding:20px 10px;
         width:80%;
         padding-right:35px;
+        margin-top:25px;
     }
     .session4-detail{
         padding:0px;
