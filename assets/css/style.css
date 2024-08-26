@@ -238,12 +238,12 @@ body {
 }
 
 .slick-prev {/*戻る矢印の位置と形状*/
-    left: -1.5%;
+    left: -2.5%;
     transform: rotate(-135deg);
 }
 
 .slick-next {/*次へ矢印の位置と形状*/
-    right: -1.5%;
+    right: -2.5%;
     transform: rotate(45deg);
 }
 
@@ -663,7 +663,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
     }
     .store-info{
         font-size:30px;
-        width:80%;/*--------------------------------後で変更する*/
+        width:80%;
         text-align:right;
         text-align: left;
         padding:20px 10px 20px 10px;
@@ -671,6 +671,8 @@ div.cal_wrapper table.cal tr td div.Holyday {
     }
     .text-section{
         width:100%;
+        padding-bottom:30px;
+        padding-top:30px;
     }
     .detail-info{
         font-size:18px;
@@ -679,11 +681,23 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .slider{
         width:100%;
     }
+    .slider img {
+        width:75vw;/*スライダー内の画像を26vwにしてレスポンシブ化*/
+        height:auto;
+    }
     .photo-section{
         padding-top:30px;
     }
     .navbar-icon{
         padding-right:20px;
+    }
+    .slick-next {/*次へ矢印の位置と形状*/
+        right: 8%;
+        transform: rotate(45deg);
+    }
+    .slick-prev {/*戻る矢印の位置と形状*/
+        left: 8%;
+        transform: rotate(-135deg);
     }
     /*-----------------session2--------------*/
     .section2-photo{
@@ -691,9 +705,10 @@ div.cal_wrapper table.cal tr td div.Holyday {
     }
     .section-title{
         width:80%;
-        padding:10px 10px 10px 20px;
+        padding:20px 10px;
         text-align:right;
         font-size:30px;
+        margin-bottom: 20px;
     }
     .all-menu{
         width:100%;
@@ -706,6 +721,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
     }
     .title-cut{
         padding-top:25px;
+        font-size:25px;
     }
     .title-other{
         font-size: 30px;
@@ -714,22 +730,33 @@ div.cal_wrapper table.cal tr td div.Holyday {
         padding: 10px;
         padding-top:25px;
         padding-bottom: 50px;
+        font-size:25px;
     }
     .s2-subphoto{
         padding:0px;
         flex-direction: column;
+    }
+    .s2-scissors{
+        width:100px;
+    }
+    .s2-comb{
+        width:100px;
     }
     .store-detail{
         padding:20px;
     }
     /*------------------session3-----------------*/
     .place-info{
-        padding:0px;
-        width:100%;/*-------------後で変更する-----------*/
+        padding:20px 10px;
+        width:80%;
+        font-size:30px;
     }
     .address{
         display:flex;
         flex-direction: column;
+    }
+    .address-info{
+        padding-bottom: 20px;
     }
     .map{
         width:80%;
