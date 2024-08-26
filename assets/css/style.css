@@ -663,9 +663,11 @@ div.cal_wrapper table.cal tr td div.Holyday {
     }
     .store-info{
         font-size:30px;
-        padding:10px 10px;
         width:80%;/*--------------------------------後で変更する*/
         text-align:right;
+        text-align: left;
+        padding:20px 10px 20px 10px;
+        margin-bottom:20px;
     }
     .text-section{
         width:100%;
@@ -677,14 +679,21 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .slider{
         width:100%;
     }
+    .photo-section{
+        padding-top:30px;
+    }
+    .navbar-icon{
+        padding-right:20px;
+    }
     /*-----------------session2--------------*/
     .section2-photo{
         display:none;
     }
     .section-title{
-        width:100%;
-        padding:0px;
-        text-align:left;
+        width:80%;
+        padding:10px 10px 10px 20px;
+        text-align:right;
+        font-size:30px;
     }
     .all-menu{
         width:100%;
@@ -695,16 +704,23 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .other-menu{
         padding:0px;
     }
+    .title-cut{
+        padding-top:25px;
+    }
     .title-other{
         font-size: 30px;
         display: flex;
         justify-content: center;
         padding: 10px;
+        padding-top:25px;
         padding-bottom: 50px;
     }
     .s2-subphoto{
         padding:0px;
         flex-direction: column;
+    }
+    .store-detail{
+        padding:20px;
     }
     /*------------------session3-----------------*/
     .place-info{
