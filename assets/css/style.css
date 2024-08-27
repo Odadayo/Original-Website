@@ -622,7 +622,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
 }
 
 /*--------------------レスポンシブ対応--------------------*/
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     /*-------------header-------------------*/
     .header-fix {
         width: 100vw;
@@ -847,4 +847,9 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .footer-title{
         font-size:20px;
     }
+}
+
+@media screen and (max-width: 1024px) {/*ーーーーーーータブレット対応ーーーーーーーー*/
+    /*-----header------*/
+    
 }
