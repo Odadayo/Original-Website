@@ -647,6 +647,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .header-logo{
         width:100%;
         height:auto;
+        display:block;
     }
     .title-kato {
         font-size: 30px;
@@ -851,5 +852,5 @@ div.cal_wrapper table.cal tr td div.Holyday {
 
 @media screen and (max-width: 1024px) {/*ーーーーーーータブレット対応ーーーーーーーー*/
     /*-----header------*/
-    
+
 }
