@@ -88,7 +88,6 @@ body {
     display: flex;
     align-items: center; /* 垂直方向の中央揃え */
     justify-content: space-between; /* 水平方向のスペース調整 */
-    padding: 0 20px; /* 内側の余白調整 */
     top: 0;
     z-index: 1000; /* 他の要素の上に表示 */
     transition: top 0.3s ease-in-out; /* スクロール時の動きをスムーズに */
@@ -177,7 +176,7 @@ body {
     font-size:40px;
     border-bottom: 1px solid #000;
     display: inline-block;
-    width:600px;
+    width:50vw;
     padding-left:200px;
     padding-top:40px;
     margin-bottom:50px;
@@ -290,6 +289,7 @@ body {
     text-align:right;
     display:flex;
     flex-direction:column;
+    width:60vw;
 }
 
 .parent-title{
@@ -300,7 +300,7 @@ body {
 .section-title{
     font-size:40px;
     border-bottom: 1px solid #000;
-    width:600px;
+    width:50vw;
     text-align: right;
     padding-right: 200px;
     padding-bottom: 20px;
@@ -308,10 +308,11 @@ body {
 }
 
 .section2-photo {
-    width: 600px; /* 固定の幅を設定しない */
+    width: 40vw; /* 固定の幅を設定しない */
     max-width: 45%; /* 最大幅を設定 */
     height: auto; /* アスペクト比を保つ */
     object-fit: contain; /* 画像が要素内に収まるように調整 */
+    margin-top:220px;
 }
 
 
@@ -383,13 +384,14 @@ body {
 .adress-char{
     display:flex;
     flex-direction: column;
+    width:60vw;
 }
 
 .place-info{
     font-size:40px;
     padding:20px 0px 20px 150px;
     border-bottom: 1px solid #000;
-    width:600px;
+    width:50vw;
     margin-top:120px;
 }
 
@@ -397,7 +399,7 @@ body {
     font-size:20px;
     padding:50px 60px;
     text-align:left;
-    width:650px;
+    width:40vw;
 }
 
 .address-info{
@@ -406,6 +408,7 @@ body {
 
 .map{
     padding-top: 120px;
+    margin:50px;
 }
 
 .address-detail{
@@ -423,7 +426,7 @@ div.cal_wrapper {
 }
 div.schedule_wrapper {
     padding: 10px 0px;
-    width: 600px;
+    width: 50vw;
     border: solid 1px #CCC;
     border-radius: 5px;
     box-shadow: 1px 1px 3px #666;
@@ -541,6 +544,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
     display:flex;
     flex-direction:column;
     padding-left:120px;
+    width:60vw;
 }
 
 .parent-session4{
@@ -551,7 +555,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
 .session4-title{
     font-size:40px;
     border-bottom: 1px solid black;
-    width:600px;
+    width:50vw;
     text-align:rightr;
     padding-bottom:20px;
     padding-top:30px;
@@ -598,8 +602,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
  
 /*--------------------------footer------------------------------*/
 .footer{
-    height:110px;
-    width:100%;
+    height:100%;
     background-color: #f5f5f5;
     text-align:center;
 }
@@ -614,8 +617,8 @@ div.cal_wrapper table.cal tr td div.Holyday {
 .footer-title{
     font-weight: bold;
     font-size:22px;
-    padding-top:12px;
-    padding-bottom:5px;
+    padding-top:20px;
+    padding-bottom:10px;
 }
 
 .footer-detail{
@@ -633,7 +636,13 @@ div.cal_wrapper table.cal tr td div.Holyday {
 .footer-last{
     padding-bottom: 14px;
 }
-
+.footer-01{
+    display:flex;
+    flex-direction:row;
+}
+.footer-bottom{
+    margin-bottom:40px;
+}
 /*--------------------レスポンシブ対応--------------------*/
 @media screen and (max-width: 768px) {
     /*-------------header-------------------*/
@@ -786,38 +795,38 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .store-detail{
         padding:20px;
     }
-    /*------------------session3-----------------*/
-    .place-info{
-        padding:20px 10px;
-        width:80%;
-        font-size:30px;
-        padding-left:35px;
-        margin-top:50px;
-    }
-    .address{
-        display:flex;
-        flex-direction: column;
-    }
-    .address-info{
-        padding-bottom: 20px;
-    }
-    .all-content{
-        padding:0px 20px;
-    }
-    .all-info{
-        padding:0px;
-        width:100%;
-    }
-    .menu-name{
-        padding:20px;
-    }
-    .map{
-        width:80%;
-        height:30vh;
-        text-align:center;
-        align-items:center;
-        margin:0 auto;
-    }
+      /*------------------session3-----------------*/
+      .place-info{
+          padding:20px 10px;
+          width:80%;
+          font-size:30px;
+          padding-left:35px;
+          margin-top:50px;
+      }
+      .address{
+          display:flex;
+          flex-direction: column;
+      }
+      .address-info{
+          padding-bottom: 20px;
+      }
+      .all-content{
+          padding:0px 20px;
+      }
+      .all-info{
+          padding:0px;
+          width:100%;
+      }
+      .menu-name{
+          padding:20px;
+      }
+      .map{
+          width:80%;
+          height:30vh;
+          text-align:center;
+          align-items:center;
+          margin:0 auto;
+      }
 
     /*-------------------session4-----------------*/
     .session4-set{
