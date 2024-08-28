@@ -134,14 +134,20 @@ body {
     height: 40px;
 }
 
-.contact-btn{
+.contact-btn {
     text-align: center;
     color: #fff;
     background-color: #444;
-    padding: 10px 80px 10px 0px;
+    padding: 10px;
     border-radius: 10px;
-    width:140px;
-    padding-left: 30px;
+    height: auto;
+    display: flex;
+    width: 15vw;
+    align-content: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-right:10px;
 }
 
 .contact-text {
@@ -810,6 +816,9 @@ div.cal_wrapper table.cal tr td div.Holyday {
       .address-info{
           padding-bottom: 20px;
       }
+      .adress-char{
+        width:100%;
+      }
       .all-content{
           padding:0px 20px;
       }
@@ -841,6 +850,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
     }
     .session4-detail{
         padding:0px;
+        width:100%;
     }
     .all-list{
         justify-content: space-between;
