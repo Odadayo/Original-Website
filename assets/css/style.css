@@ -326,7 +326,7 @@ body {
     display:flex;
     font-size:20px;
     text-align:center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .title-cut{
@@ -346,14 +346,13 @@ body {
 
 .cut-menu{
     padding-top:50px;
-    padding-left:100px;
     display:flex;
     flex-direction:column;
     text-align:right;
+    margin-left:50px;
 }
 
 .other-menu{
-    padding-left: 50px;
     padding-top:50px;
     display:flex;
     flex-direction:column;
@@ -364,6 +363,14 @@ body {
     padding:20px 10px;
 }
 
+/*--------------------------------------*/
+.menu-raw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*--------------------------------------*/
 .s2-subphoto{
     display:flex;
     padding-top:60px;
@@ -770,6 +777,7 @@ div.cal_wrapper table.cal tr td div.Holyday {
     }
     .cut-menu{
         padding:0px;
+        margin:0px;
     }
     .other-menu{
         padding:0px;
