@@ -696,6 +696,11 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .navbar-icon {
         height: 35px;
     }
+    .header-logo img {
+        width: 100%;
+        height: 45vh;
+        object-fit: cover;
+    }
 
     /*-----------------session1--------------*/
     .session1-all{
@@ -889,9 +894,4 @@ div.cal_wrapper table.cal tr td div.Holyday {
     .footer-title{
         font-size:20px;
     }
-}
-
-@media screen and (max-width: 1024px) {/*ーーーーーーータブレット対応ーーーーーーーー*/
-    /*-----header------*/
-
 }
